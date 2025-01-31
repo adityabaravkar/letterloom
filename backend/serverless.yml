@@ -1,0 +1,14 @@
+service: letterloom-api
+provider:
+  name: aws
+  runtime: python3.12
+  region: us-east-1
+  stage: dev
+
+functions:
+  validateGuess:
+    handler: src/handlers/game.lambda_handler
+    events:
+      - http:
+          path: validate
+          method: post

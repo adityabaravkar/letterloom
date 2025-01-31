@@ -128,3 +128,31 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Bytecode and compiled files
+__pycache__/
+*.py[cod]
+
+# Virtual environment
+venv/
+
+# Dependency files
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Python packaging
+dist/
+build/
+*.egg-info/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Unit test cache
+.pytest_cache/
+
+# Ignore event files (used for local testing)
+event.json
